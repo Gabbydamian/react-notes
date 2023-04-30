@@ -1,3 +1,5 @@
+import '../styles/notes.css';
+import Note from './Note';
 const Notes = () => {
   const data = [
     {
@@ -15,25 +17,29 @@ const Notes = () => {
       title: 'Sample Note 3',
       body: 'Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ipsa ipsum voluptatibus officia nobis necessitatibus maxime modi saepe perferendis tenetur libero.',
     },
+    {
+      id: 4,
+      title: 'Sample Note 4',
+      body: 'Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ipsa ipsum voluptatibus officia nobis necessitatibus maxime modi saepe perferendis tenetur libero.',
+    },
+    {
+      id: 5,
+      title: 'Sample Note 5',
+      body: 'Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ipsa ipsum voluptatibus officia nobis necessitatibus maxime modi saepe perferendis tenetur libero.',
+    },
+    {
+      id: 6,
+      title: 'Sample Note 6',
+      body: 'Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ipsa ipsum voluptatibus officia nobis necessitatibus maxime modi saepe perferendis tenetur libero.',
+    },
   ];
 
   return (
-    <div>
-        <ul>
-          {data.map((data) => (
-            <li style={{ 'margin-top': '30px' }} key={data.id}>
-              {data.body}
-            </li>
-          ))}
-        </ul>
-        <ul>
-          {data.map((data) => (
-            <li style={{ 'margin-top': '30px' }} key={data.id}>
-              {data.body}
-            </li>
-          ))}
-        </ul>
-    </div>
+    <main id="main">
+      {data.map((data) => (
+        <Note key={data.id} data={data} />
+      ))}
+    </main>
   );
 };
 

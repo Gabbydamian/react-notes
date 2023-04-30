@@ -1,0 +1,35 @@
+main {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  padding: 30px;
+  max-width: 100%;
+}
+
+main * {
+  outline: 1px dashed red;
+}
+#main a {
+  max-width: 14rem;
+  max-height: 14rem;
+  overflow-y: hidden;
+  padding: 20px;
+  margin: 20px;
+  box-shadow: 5px 5px 5px rgba(112, 112, 112, 0.555);
+  border-radius: 0.8rem;
+  background-color: whitesmoke;
+  color: inherit;
+}
+
+#main a h2 {
+  font-weight: 600;
+  font-size: 1.2rem;
+  margin-bottom: 15px;
+}
+
+#main a p {
+  font-size: 0.85rem;
+  font-weight: 300;
+  line-height: 1.2rem;
+}
